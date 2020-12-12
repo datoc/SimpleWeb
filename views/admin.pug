@@ -1,0 +1,33 @@
+html
+    head
+        link(rel="stylesheet" type="text/css" href="css/style.css")
+        link(rel="stylesheet" type="text/css" href="css/bootstrap.min.css")
+        title Dashboard
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width,initial-scale=1.0")
+    body
+        div.header
+            h1 #{name_lastname}
+            p #{education}
+            img(src="images/usa.png" style="width:200px;height:80px;margin-left: 900px;position: relative;margin-top: -100px")
+
+        div.body-block(style="width: 70%")
+            center
+                h1.text-primary Submit&nbsp;post
+                p.text-success Database&nbsp;connected
+            form(method="post" style="width:500px" class="col-md-offset-3")
+                div.form-group
+                    label(for="postName") Post&nbsp;name
+                    input(type="text" name="postName" class="form-control" placeholder="Post name")
+                div.form-group
+                    label(for="postText") Post
+                    textarea.form-control(name="postText" placeholder="Post...")
+                div.form-group
+                    input(type="submit" class="btn btn-info" value="Submit post")
+        div.footer
+            center
+                br
+                br
+                p Copyright&nbsp;&copy&nbsp;#{Year},&nbsp;David&nbsp;Chechelashvili.&nbsp;All&nbsp;right&nbsp;reserved.
+                br
+                br

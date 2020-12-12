@@ -1,0 +1,50 @@
+html
+    head
+        link(rel="stylesheet" type="text/css" href="css/style.css")
+        title #{myTitle}
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width,initial-scale=1.0")
+    body
+        div.header
+            h1 #{name_lastname}
+            p #{education}
+            img(src="images/usa.png" style="width:200px;height:80px;margin-left: 900px;position: relative;margin-top: -200px")
+        div.nav
+            ul
+                li
+                    a(href="/") Home
+                li
+                    a(href="/contact") Contact 
+                li
+                    a(href="https://www.facebook.com/profile.php?id=100024272060190") Facebook
+                li
+                    a(href="https://www.instagram.com/daa_vviid/") Instagram
+                li
+                    a(href="https://twitter.com/BotNet010") Twitter
+        div.body-block
+            //-h2 About&nbsp;me
+            //-p Hello. I'm David Chechelashvili, a Software and Web developer, BS.IT Student at Gori State Teaching University. You can find me on some social networking website, such as Facebook, Twitter or Instagram.
+            h2 #{abt}
+            p #{abtx}
+            //-h2 Education
+            //-p In may of 2017 i graduated Gori 7th public school and in September of 2017 i started study at Gori State Teching University In Information Technology of Bechalor. My goal is to learn meny in programming.
+            h2 #{edt}
+            p #{edx}
+
+            h2 Skills
+
+            p Frot-end web development: <strong><span id="p1">HTML,CSS(+Less),JavaScript,jQuery,AngularJS,Bootstrap.</span></strong>
+
+            p Back-end web development: <strong><span id="p1">PHP,Python(+Flask),ASP.NET(+MVC),NodeJS(+ExpressJS)</span></strong>
+
+            p Software-development: <strong><span id="p1">C,C#,C++,Python.</span></strong>
+
+            p Databases: <strong><span id="p1">MySQL,MS&nbsp;SQL,PostgreSQL,MongoDB</span></strong>
+
+        div.footer
+            center
+                br
+                br
+                p Copyright&nbsp;&copy&nbsp;#{Year},&nbsp;David&nbsp;Chechelashvili.&nbsp;All&nbsp;right&nbsp;reserved.
+                br
+                br
